@@ -1,0 +1,759 @@
+# JMH version: 1.37
+# VM version: JDK 21.0.2, OpenJDK 64-Bit Server VM, 21.0.2+13-LTS
+# VM invoker: C:\Program Files\Eclipse Adoptium\jdk-21.0.2.13-hotspot\bin\java.exe
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: benchmarkings.PortfolioBenchmark.benchmarkApplyWeights
+# Parameters: (assetsCount = 10)
+
+# Run progress: 0,00% complete, ETA 00:28:00
+# Fork: 1 of 1
+# Warmup Iteration   1: 2642,666 ns/op
+# Warmup Iteration   2: 2089,639 ns/op
+Iteration   1: 2095,039 ns/op
+Iteration   2: 2069,198 ns/op
+Iteration   3: 2080,769 ns/op
+Iteration   4: 2088,113 ns/op
+Iteration   5: 2234,989 ns/op
+
+
+Result "benchmarkings.PortfolioBenchmark.benchmarkApplyWeights":
+  2113,622 ±(99.9%) 263,838 ns/op [Average]
+  (min, avg, max) = (2069,198, 2113,622, 2234,989), stdev = 68,518
+  CI (99.9%): [1849,783, 2377,460] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.2, OpenJDK 64-Bit Server VM, 21.0.2+13-LTS
+# VM invoker: C:\Program Files\Eclipse Adoptium\jdk-21.0.2.13-hotspot\bin\java.exe
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: benchmarkings.PortfolioBenchmark.benchmarkApplyWeights
+# Parameters: (assetsCount = 100)
+
+# Run progress: 4,17% complete, ETA 00:27:11
+# Fork: 1 of 1
+# Warmup Iteration   1: 18391,414 ns/op
+# Warmup Iteration   2: 18413,594 ns/op
+Iteration   1: 17846,943 ns/op
+Iteration   2: 18087,457 ns/op
+Iteration   3: 17914,874 ns/op
+Iteration   4: 17921,036 ns/op
+Iteration   5: 17745,827 ns/op
+
+
+Result "benchmarkings.PortfolioBenchmark.benchmarkApplyWeights":
+  17903,227 ±(99.9%) 480,699 ns/op [Average]
+  (min, avg, max) = (17745,827, 17903,227, 18087,457), stdev = 124,836
+  CI (99.9%): [17422,529, 18383,926] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.2, OpenJDK 64-Bit Server VM, 21.0.2+13-LTS
+# VM invoker: C:\Program Files\Eclipse Adoptium\jdk-21.0.2.13-hotspot\bin\java.exe
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: benchmarkings.PortfolioBenchmark.benchmarkApplyWeights
+# Parameters: (assetsCount = 1000)
+
+# Run progress: 8,33% complete, ETA 00:26:00
+# Fork: 1 of 1
+# Warmup Iteration   1: 203515,138 ns/op
+# Warmup Iteration   2: 196558,309 ns/op
+Iteration   1: 189966,396 ns/op
+Iteration   2: 187938,185 ns/op
+Iteration   3: 189206,335 ns/op
+Iteration   4: 187795,541 ns/op
+Iteration   5: 188695,067 ns/op
+
+
+Result "benchmarkings.PortfolioBenchmark.benchmarkApplyWeights":
+  188720,305 ±(99.9%) 3474,395 ns/op [Average]
+  (min, avg, max) = (187795,541, 188720,305, 189966,396), stdev = 902,289
+  CI (99.9%): [185245,909, 192194,700] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.2, OpenJDK 64-Bit Server VM, 21.0.2+13-LTS
+# VM invoker: C:\Program Files\Eclipse Adoptium\jdk-21.0.2.13-hotspot\bin\java.exe
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: benchmarkings.PortfolioBenchmark.benchmarkCalculateReturnChange
+# Parameters: (assetsCount = 10)
+
+# Run progress: 12,50% complete, ETA 00:24:48
+# Fork: 1 of 1
+# Warmup Iteration   1: 3186,136 ns/op
+# Warmup Iteration   2: 2655,898 ns/op
+Iteration   1: 2666,956 ns/op
+Iteration   2: 2668,510 ns/op
+Iteration   3: 2684,456 ns/op
+Iteration   4: 2720,539 ns/op
+Iteration   5: 2809,762 ns/op
+
+
+Result "benchmarkings.PortfolioBenchmark.benchmarkCalculateReturnChange":
+  2710,045 ±(99.9%) 230,156 ns/op [Average]
+  (min, avg, max) = (2666,956, 2710,045, 2809,762), stdev = 59,771
+  CI (99.9%): [2479,888, 2940,201] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.2, OpenJDK 64-Bit Server VM, 21.0.2+13-LTS
+# VM invoker: C:\Program Files\Eclipse Adoptium\jdk-21.0.2.13-hotspot\bin\java.exe
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: benchmarkings.PortfolioBenchmark.benchmarkCalculateReturnChange
+# Parameters: (assetsCount = 100)
+
+# Run progress: 16,67% complete, ETA 00:23:37
+# Fork: 1 of 1
+# Warmup Iteration   1: 34051,486 ns/op
+# Warmup Iteration   2: 33356,155 ns/op
+Iteration   1: 33140,638 ns/op
+Iteration   2: 33438,437 ns/op
+Iteration   3: 47959,974 ns/op
+Iteration   4: 39258,864 ns/op
+Iteration   5: 38529,535 ns/op
+
+
+Result "benchmarkings.PortfolioBenchmark.benchmarkCalculateReturnChange":
+  38465,489 ±(99.9%) 23136,257 ns/op [Average]
+  (min, avg, max) = (33140,638, 38465,489, 47959,974), stdev = 6008,412
+  CI (99.9%): [15329,232, 61601,746] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.2, OpenJDK 64-Bit Server VM, 21.0.2+13-LTS
+# VM invoker: C:\Program Files\Eclipse Adoptium\jdk-21.0.2.13-hotspot\bin\java.exe
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: benchmarkings.PortfolioBenchmark.benchmarkCalculateReturnChange
+# Parameters: (assetsCount = 1000)
+
+# Run progress: 20,83% complete, ETA 00:22:25
+# Fork: 1 of 1
+# Warmup Iteration   1: 435999,451 ns/op
+# Warmup Iteration   2: 414841,688 ns/op
+Iteration   1: 456687,803 ns/op
+Iteration   2: 363256,633 ns/op
+Iteration   3: 398538,754 ns/op
+Iteration   4: 522507,781 ns/op
+Iteration   5: 416833,663 ns/op
+
+
+Result "benchmarkings.PortfolioBenchmark.benchmarkCalculateReturnChange":
+  431564,927 ±(99.9%) 234822,381 ns/op [Average]
+  (min, avg, max) = (363256,633, 431564,927, 522507,781), stdev = 60982,627
+  CI (99.9%): [196742,546, 666387,308] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.2, OpenJDK 64-Bit Server VM, 21.0.2+13-LTS
+# VM invoker: C:\Program Files\Eclipse Adoptium\jdk-21.0.2.13-hotspot\bin\java.exe
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: benchmarkings.PortfolioBenchmark.benchmarkCombine
+# Parameters: (assetsCount = 10)
+
+# Run progress: 25,00% complete, ETA 00:21:15
+# Fork: 1 of 1
+# Warmup Iteration   1: 2624,701 ns/op
+# Warmup Iteration   2: 2280,729 ns/op
+Iteration   1: 2424,120 ns/op
+Iteration   2: 2329,508 ns/op
+Iteration   3: 1918,792 ns/op
+Iteration   4: 1969,231 ns/op
+Iteration   5: 2566,244 ns/op
+
+
+Result "benchmarkings.PortfolioBenchmark.benchmarkCombine":
+  2241,579 ±(99.9%) 1097,307 ns/op [Average]
+  (min, avg, max) = (1918,792, 2241,579, 2566,244), stdev = 284,967
+  CI (99.9%): [1144,272, 3338,886] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.2, OpenJDK 64-Bit Server VM, 21.0.2+13-LTS
+# VM invoker: C:\Program Files\Eclipse Adoptium\jdk-21.0.2.13-hotspot\bin\java.exe
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: benchmarkings.PortfolioBenchmark.benchmarkCombine
+# Parameters: (assetsCount = 100)
+
+# Run progress: 29,17% complete, ETA 00:20:04
+# Fork: 1 of 1
+# Warmup Iteration   1: 22160,969 ns/op
+# Warmup Iteration   2: 22322,008 ns/op
+Iteration   1: 22892,560 ns/op
+Iteration   2: 23279,008 ns/op
+Iteration   3: 25774,932 ns/op
+Iteration   4: 20777,062 ns/op
+Iteration   5: 20033,452 ns/op
+
+
+Result "benchmarkings.PortfolioBenchmark.benchmarkCombine":
+  22551,403 ±(99.9%) 8722,643 ns/op [Average]
+  (min, avg, max) = (20033,452, 22551,403, 25774,932), stdev = 2265,243
+  CI (99.9%): [13828,760, 31274,046] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.2, OpenJDK 64-Bit Server VM, 21.0.2+13-LTS
+# VM invoker: C:\Program Files\Eclipse Adoptium\jdk-21.0.2.13-hotspot\bin\java.exe
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: benchmarkings.PortfolioBenchmark.benchmarkCombine
+# Parameters: (assetsCount = 1000)
+
+# Run progress: 33,33% complete, ETA 00:18:53
+# Fork: 1 of 1
+# Warmup Iteration   1: 204023,717 ns/op
+# Warmup Iteration   2: 198710,591 ns/op
+Iteration   1: 197419,241 ns/op
+Iteration   2: 198289,473 ns/op
+Iteration   3: 199140,752 ns/op
+Iteration   4: 195094,246 ns/op
+Iteration   5: 201668,060 ns/op
+
+
+Result "benchmarkings.PortfolioBenchmark.benchmarkCombine":
+  198322,355 ±(99.9%) 9253,751 ns/op [Average]
+  (min, avg, max) = (195094,246, 198322,355, 201668,060), stdev = 2403,170
+  CI (99.9%): [189068,604, 207576,105] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.2, OpenJDK 64-Bit Server VM, 21.0.2+13-LTS
+# VM invoker: C:\Program Files\Eclipse Adoptium\jdk-21.0.2.13-hotspot\bin\java.exe
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: benchmarkings.PortfolioBenchmark.benchmarkFillRandom
+# Parameters: (assetsCount = 10)
+
+# Run progress: 37,50% complete, ETA 00:17:42
+# Fork: 1 of 1
+# Warmup Iteration   1: 4631,827 ns/op
+# Warmup Iteration   2: 4529,277 ns/op
+Iteration   1: 4464,288 ns/op
+Iteration   2: 4467,022 ns/op
+Iteration   3: 4437,505 ns/op
+Iteration   4: 4732,299 ns/op
+Iteration   5: 4294,803 ns/op
+
+
+Result "benchmarkings.PortfolioBenchmark.benchmarkFillRandom":
+  4479,183 ±(99.9%) 609,359 ns/op [Average]
+  (min, avg, max) = (4294,803, 4479,183, 4732,299), stdev = 158,249
+  CI (99.9%): [3869,824, 5088,543] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.2, OpenJDK 64-Bit Server VM, 21.0.2+13-LTS
+# VM invoker: C:\Program Files\Eclipse Adoptium\jdk-21.0.2.13-hotspot\bin\java.exe
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: benchmarkings.PortfolioBenchmark.benchmarkFillRandom
+# Parameters: (assetsCount = 100)
+
+# Run progress: 41,67% complete, ETA 00:16:31
+# Fork: 1 of 1
+# Warmup Iteration   1: 45316,598 ns/op
+# Warmup Iteration   2: 48723,018 ns/op
+Iteration   1: 51739,354 ns/op
+Iteration   2: 54191,547 ns/op
+Iteration   3: 51328,002 ns/op
+Iteration   4: 45412,983 ns/op
+Iteration   5: 45415,619 ns/op
+
+
+Result "benchmarkings.PortfolioBenchmark.benchmarkFillRandom":
+  49617,501 ±(99.9%) 15364,474 ns/op [Average]
+  (min, avg, max) = (45412,983, 49617,501, 54191,547), stdev = 3990,105
+  CI (99.9%): [34253,027, 64981,975] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.2, OpenJDK 64-Bit Server VM, 21.0.2+13-LTS
+# VM invoker: C:\Program Files\Eclipse Adoptium\jdk-21.0.2.13-hotspot\bin\java.exe
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: benchmarkings.PortfolioBenchmark.benchmarkFillRandom
+# Parameters: (assetsCount = 1000)
+
+# Run progress: 45,83% complete, ETA 00:15:20
+# Fork: 1 of 1
+# Warmup Iteration   1: 504360,957 ns/op
+# Warmup Iteration   2: 452849,382 ns/op
+Iteration   1: 455955,886 ns/op
+Iteration   2: 437380,219 ns/op
+Iteration   3: 442249,589 ns/op
+Iteration   4: 412277,949 ns/op
+Iteration   5: 436668,865 ns/op
+
+
+Result "benchmarkings.PortfolioBenchmark.benchmarkFillRandom":
+  436906,501 ±(99.9%) 60831,463 ns/op [Average]
+  (min, avg, max) = (412277,949, 436906,501, 455955,886), stdev = 15797,738
+  CI (99.9%): [376075,038, 497737,965] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.2, OpenJDK 64-Bit Server VM, 21.0.2+13-LTS
+# VM invoker: C:\Program Files\Eclipse Adoptium\jdk-21.0.2.13-hotspot\bin\java.exe
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: benchmarkings.PortfolioBenchmark.benchmarkFindAssetsWithinReturnRange
+# Parameters: (assetsCount = 10)
+
+# Run progress: 50,00% complete, ETA 00:14:10
+# Fork: 1 of 1
+# Warmup Iteration   1: 116,520 ns/op
+# Warmup Iteration   2: 108,853 ns/op
+Iteration   1: 83,055 ns/op
+Iteration   2: 115,115 ns/op
+Iteration   3: 92,331 ns/op
+Iteration   4: 98,750 ns/op
+Iteration   5: 57,040 ns/op
+
+
+Result "benchmarkings.PortfolioBenchmark.benchmarkFindAssetsWithinReturnRange":
+  89,258 ±(99.9%) 82,691 ns/op [Average]
+  (min, avg, max) = (57,040, 89,258, 115,115), stdev = 21,475
+  CI (99.9%): [6,567, 171,949] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.2, OpenJDK 64-Bit Server VM, 21.0.2+13-LTS
+# VM invoker: C:\Program Files\Eclipse Adoptium\jdk-21.0.2.13-hotspot\bin\java.exe
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: benchmarkings.PortfolioBenchmark.benchmarkFindAssetsWithinReturnRange
+# Parameters: (assetsCount = 100)
+
+# Run progress: 54,17% complete, ETA 00:12:59
+# Fork: 1 of 1
+# Warmup Iteration   1: 514,176 ns/op
+# Warmup Iteration   2: 499,801 ns/op
+Iteration   1: 520,009 ns/op
+Iteration   2: 553,159 ns/op
+Iteration   3: 488,457 ns/op
+Iteration   4: 505,367 ns/op
+Iteration   5: 502,752 ns/op
+
+
+Result "benchmarkings.PortfolioBenchmark.benchmarkFindAssetsWithinReturnRange":
+  513,949 ±(99.9%) 94,772 ns/op [Average]
+  (min, avg, max) = (488,457, 513,949, 553,159), stdev = 24,612
+  CI (99.9%): [419,177, 608,720] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.2, OpenJDK 64-Bit Server VM, 21.0.2+13-LTS
+# VM invoker: C:\Program Files\Eclipse Adoptium\jdk-21.0.2.13-hotspot\bin\java.exe
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: benchmarkings.PortfolioBenchmark.benchmarkFindAssetsWithinReturnRange
+# Parameters: (assetsCount = 1000)
+
+# Run progress: 58,33% complete, ETA 00:11:48
+# Fork: 1 of 1
+# Warmup Iteration   1: 8372,784 ns/op
+# Warmup Iteration   2: 9089,554 ns/op
+Iteration   1: 8497,979 ns/op
+Iteration   2: 9211,022 ns/op
+Iteration   3: 8951,052 ns/op
+Iteration   4: 8856,129 ns/op
+Iteration   5: 8464,035 ns/op
+
+
+Result "benchmarkings.PortfolioBenchmark.benchmarkFindAssetsWithinReturnRange":
+  8796,044 ±(99.9%) 1216,032 ns/op [Average]
+  (min, avg, max) = (8464,035, 8796,044, 9211,022), stdev = 315,800
+  CI (99.9%): [7580,012, 10012,075] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.2, OpenJDK 64-Bit Server VM, 21.0.2+13-LTS
+# VM invoker: C:\Program Files\Eclipse Adoptium\jdk-21.0.2.13-hotspot\bin\java.exe
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: benchmarkings.PortfolioBenchmark.benchmarkFindMaxTotalReturn
+# Parameters: (assetsCount = 10)
+
+# Run progress: 62,50% complete, ETA 00:10:37
+# Fork: 1 of 1
+# Warmup Iteration   1: 815,582 ns/op
+# Warmup Iteration   2: 684,009 ns/op
+Iteration   1: 686,632 ns/op
+Iteration   2: 669,428 ns/op
+Iteration   3: 667,889 ns/op
+Iteration   4: 712,923 ns/op
+Iteration   5: 649,396 ns/op
+
+
+Result "benchmarkings.PortfolioBenchmark.benchmarkFindMaxTotalReturn":
+  677,254 ±(99.9%) 92,038 ns/op [Average]
+  (min, avg, max) = (649,396, 677,254, 712,923), stdev = 23,902
+  CI (99.9%): [585,215, 769,292] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.2, OpenJDK 64-Bit Server VM, 21.0.2+13-LTS
+# VM invoker: C:\Program Files\Eclipse Adoptium\jdk-21.0.2.13-hotspot\bin\java.exe
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: benchmarkings.PortfolioBenchmark.benchmarkFindMaxTotalReturn
+# Parameters: (assetsCount = 100)
+
+# Run progress: 66,67% complete, ETA 00:09:26
+# Fork: 1 of 1
+# Warmup Iteration   1: 7924,408 ns/op
+# Warmup Iteration   2: 7696,823 ns/op
+Iteration   1: 7750,180 ns/op
+Iteration   2: 6781,944 ns/op
+Iteration   3: 6774,922 ns/op
+Iteration   4: 7283,106 ns/op
+Iteration   5: 6852,146 ns/op
+
+
+Result "benchmarkings.PortfolioBenchmark.benchmarkFindMaxTotalReturn":
+  7088,460 ±(99.9%) 1638,066 ns/op [Average]
+  (min, avg, max) = (6774,922, 7088,460, 7750,180), stdev = 425,401
+  CI (99.9%): [5450,393, 8726,526] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.2, OpenJDK 64-Bit Server VM, 21.0.2+13-LTS
+# VM invoker: C:\Program Files\Eclipse Adoptium\jdk-21.0.2.13-hotspot\bin\java.exe
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: benchmarkings.PortfolioBenchmark.benchmarkFindMaxTotalReturn
+# Parameters: (assetsCount = 1000)
+
+# Run progress: 70,83% complete, ETA 00:08:15
+# Fork: 1 of 1
+# Warmup Iteration   1: 84090,205 ns/op
+# Warmup Iteration   2: 94628,578 ns/op
+Iteration   1: 77246,993 ns/op
+Iteration   2: 80828,517 ns/op
+Iteration   3: 79798,149 ns/op
+Iteration   4: 78189,042 ns/op
+Iteration   5: 80295,401 ns/op
+
+
+Result "benchmarkings.PortfolioBenchmark.benchmarkFindMaxTotalReturn":
+  79271,620 ±(99.9%) 5782,501 ns/op [Average]
+  (min, avg, max) = (77246,993, 79271,620, 80828,517), stdev = 1501,697
+  CI (99.9%): [73489,119, 85054,122] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.2, OpenJDK 64-Bit Server VM, 21.0.2+13-LTS
+# VM invoker: C:\Program Files\Eclipse Adoptium\jdk-21.0.2.13-hotspot\bin\java.exe
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: benchmarkings.PortfolioBenchmark.benchmarkScale
+# Parameters: (assetsCount = 10)
+
+# Run progress: 75,00% complete, ETA 00:07:04
+# Fork: 1 of 1
+# Warmup Iteration   1: 958,521 ns/op
+# Warmup Iteration   2: 1032,620 ns/op
+Iteration   1: 1005,396 ns/op
+Iteration   2: 1024,687 ns/op
+Iteration   3: 990,752 ns/op
+Iteration   4: 958,989 ns/op
+Iteration   5: 1117,049 ns/op
+
+
+Result "benchmarkings.PortfolioBenchmark.benchmarkScale":
+  1019,375 ±(99.9%) 229,668 ns/op [Average]
+  (min, avg, max) = (958,989, 1019,375, 1117,049), stdev = 59,644
+  CI (99.9%): [789,707, 1249,042] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.2, OpenJDK 64-Bit Server VM, 21.0.2+13-LTS
+# VM invoker: C:\Program Files\Eclipse Adoptium\jdk-21.0.2.13-hotspot\bin\java.exe
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: benchmarkings.PortfolioBenchmark.benchmarkScale
+# Parameters: (assetsCount = 100)
+
+# Run progress: 79,17% complete, ETA 00:05:53
+# Fork: 1 of 1
+# Warmup Iteration   1: 11254,956 ns/op
+# Warmup Iteration   2: 9857,680 ns/op
+Iteration   1: 9997,634 ns/op
+Iteration   2: 12114,126 ns/op
+Iteration   3: 10682,177 ns/op
+Iteration   4: 10188,502 ns/op
+Iteration   5: 10584,543 ns/op
+
+
+Result "benchmarkings.PortfolioBenchmark.benchmarkScale":
+  10713,396 ±(99.9%) 3202,900 ns/op [Average]
+  (min, avg, max) = (9997,634, 10713,396, 12114,126), stdev = 831,783
+  CI (99.9%): [7510,497, 13916,296] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.2, OpenJDK 64-Bit Server VM, 21.0.2+13-LTS
+# VM invoker: C:\Program Files\Eclipse Adoptium\jdk-21.0.2.13-hotspot\bin\java.exe
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: benchmarkings.PortfolioBenchmark.benchmarkScale
+# Parameters: (assetsCount = 1000)
+
+# Run progress: 83,33% complete, ETA 00:04:42
+# Fork: 1 of 1
+# Warmup Iteration   1: 104333,428 ns/op
+# Warmup Iteration   2: 97775,365 ns/op
+Iteration   1: 99447,013 ns/op
+Iteration   2: 93757,614 ns/op
+Iteration   3: 92853,576 ns/op
+Iteration   4: 93109,556 ns/op
+Iteration   5: 92089,003 ns/op
+
+
+Result "benchmarkings.PortfolioBenchmark.benchmarkScale":
+  94251,353 ±(99.9%) 11418,296 ns/op [Average]
+  (min, avg, max) = (92089,003, 94251,353, 99447,013), stdev = 2965,295
+  CI (99.9%): [82833,057, 105669,648] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.2, OpenJDK 64-Bit Server VM, 21.0.2+13-LTS
+# VM invoker: C:\Program Files\Eclipse Adoptium\jdk-21.0.2.13-hotspot\bin\java.exe
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: benchmarkings.PortfolioBenchmark.benchmarkTranspose
+# Parameters: (assetsCount = 10)
+
+# Run progress: 87,50% complete, ETA 00:03:32
+# Fork: 1 of 1
+# Warmup Iteration   1: 2022,268 ns/op
+# Warmup Iteration   2: 2401,893 ns/op
+Iteration   1: 2413,259 ns/op
+Iteration   2: 2417,910 ns/op
+Iteration   3: 2420,059 ns/op
+Iteration   4: 2403,861 ns/op
+Iteration   5: 2409,447 ns/op
+
+
+Result "benchmarkings.PortfolioBenchmark.benchmarkTranspose":
+  2412,907 ±(99.9%) 25,112 ns/op [Average]
+  (min, avg, max) = (2403,861, 2412,907, 2420,059), stdev = 6,522
+  CI (99.9%): [2387,795, 2438,019] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.2, OpenJDK 64-Bit Server VM, 21.0.2+13-LTS
+# VM invoker: C:\Program Files\Eclipse Adoptium\jdk-21.0.2.13-hotspot\bin\java.exe
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: benchmarkings.PortfolioBenchmark.benchmarkTranspose
+# Parameters: (assetsCount = 100)
+
+# Run progress: 91,67% complete, ETA 00:02:21
+# Fork: 1 of 1
+# Warmup Iteration   1: 20350,237 ns/op
+# Warmup Iteration   2: 19696,415 ns/op
+Iteration   1: 19761,132 ns/op
+Iteration   2: 20403,521 ns/op
+Iteration   3: 22697,092 ns/op
+Iteration   4: 19946,399 ns/op
+Iteration   5: 19756,068 ns/op
+
+
+Result "benchmarkings.PortfolioBenchmark.benchmarkTranspose":
+  20512,842 ±(99.9%) 4810,042 ns/op [Average]
+  (min, avg, max) = (19756,068, 20512,842, 22697,092), stdev = 1249,153
+  CI (99.9%): [15702,800, 25322,885] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.2, OpenJDK 64-Bit Server VM, 21.0.2+13-LTS
+# VM invoker: C:\Program Files\Eclipse Adoptium\jdk-21.0.2.13-hotspot\bin\java.exe
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: benchmarkings.PortfolioBenchmark.benchmarkTranspose
+# Parameters: (assetsCount = 1000)
+
+# Run progress: 95,83% complete, ETA 00:01:10
+# Fork: 1 of 1
+# Warmup Iteration   1: 209647,514 ns/op
+# Warmup Iteration   2: 208194,692 ns/op
+Iteration   1: 211326,439 ns/op
+Iteration   2: 206682,400 ns/op
+Iteration   3: 203001,359 ns/op
+Iteration   4: 206682,520 ns/op
+Iteration   5: 203339,726 ns/op
+
+
+Result "benchmarkings.PortfolioBenchmark.benchmarkTranspose":
+  206206,489 ±(99.9%) 12938,132 ns/op [Average]
+  (min, avg, max) = (203001,359, 206206,489, 211326,439), stdev = 3359,992
+  CI (99.9%): [193268,357, 219144,620] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:28:16
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark                                                (assetsCount)  Mode  Cnt       Score        Error  Units
+PortfolioBenchmark.benchmarkApplyWeights                            10  avgt    5    2113,622 ±    263,838  ns/op
+PortfolioBenchmark.benchmarkApplyWeights                           100  avgt    5   17903,227 ±    480,699  ns/op
+PortfolioBenchmark.benchmarkApplyWeights                          1000  avgt    5  188720,305 ±   3474,395  ns/op
+PortfolioBenchmark.benchmarkCalculateReturnChange                   10  avgt    5    2710,045 ±    230,156  ns/op
+PortfolioBenchmark.benchmarkCalculateReturnChange                  100  avgt    5   38465,489 ±  23136,257  ns/op
+PortfolioBenchmark.benchmarkCalculateReturnChange                 1000  avgt    5  431564,927 ± 234822,381  ns/op
+PortfolioBenchmark.benchmarkCombine                                 10  avgt    5    2241,579 ±   1097,307  ns/op
+PortfolioBenchmark.benchmarkCombine                                100  avgt    5   22551,403 ±   8722,643  ns/op
+PortfolioBenchmark.benchmarkCombine                               1000  avgt    5  198322,355 ±   9253,751  ns/op
+PortfolioBenchmark.benchmarkFillRandom                              10  avgt    5    4479,183 ±    609,359  ns/op
+PortfolioBenchmark.benchmarkFillRandom                             100  avgt    5   49617,501 ±  15364,474  ns/op
+PortfolioBenchmark.benchmarkFillRandom                            1000  avgt    5  436906,501 ±  60831,463  ns/op
+PortfolioBenchmark.benchmarkFindAssetsWithinReturnRange             10  avgt    5      89,258 ±     82,691  ns/op
+PortfolioBenchmark.benchmarkFindAssetsWithinReturnRange            100  avgt    5     513,949 ±     94,772  ns/op
+PortfolioBenchmark.benchmarkFindAssetsWithinReturnRange           1000  avgt    5    8796,044 ±   1216,032  ns/op
+PortfolioBenchmark.benchmarkFindMaxTotalReturn                      10  avgt    5     677,254 ±     92,038  ns/op
+PortfolioBenchmark.benchmarkFindMaxTotalReturn                     100  avgt    5    7088,460 ±   1638,066  ns/op
+PortfolioBenchmark.benchmarkFindMaxTotalReturn                    1000  avgt    5   79271,620 ±   5782,501  ns/op
+PortfolioBenchmark.benchmarkScale                                   10  avgt    5    1019,375 ±    229,668  ns/op
+PortfolioBenchmark.benchmarkScale                                  100  avgt    5   10713,396 ±   3202,900  ns/op
+PortfolioBenchmark.benchmarkScale                                 1000  avgt    5   94251,353 ±  11418,296  ns/op
+PortfolioBenchmark.benchmarkTranspose                               10  avgt    5    2412,907 ±     25,112  ns/op
+PortfolioBenchmark.benchmarkTranspose                              100  avgt    5   20512,842 ±   4810,042  ns/op
+PortfolioBenchmark.benchmarkTranspose                             1000  avgt    5  206206,489 ±  12938,132  ns/op

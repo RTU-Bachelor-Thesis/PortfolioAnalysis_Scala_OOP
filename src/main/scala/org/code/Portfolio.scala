@@ -1,26 +1,43 @@
 package org.code
 
+import scala.collection.mutable.ArrayBuffer
 import scala.util.Random
 
-class Portfolio(var data: Array[Array[Double]]) {
+class Portfolio(var data: ArrayBuffer[ArrayBuffer[Double]]) {
+  def this(rows: Int, columns: Int) = {
+    this(ArrayBuffer.fill(rows, columns)(0.0))
+  }
+
   def deepCopy(): Portfolio = {
-    val copiedData = data.map(_.clone())
+    val copiedData = data.map(row => row.clone())
     new Portfolio(copiedData)
   }
 
+  def fillRandom(min: Double, max: Double): Unit = {
+    val random = new Random()
+    for (i <- data.indices; j <- data(i).indices) {
+      data(i)(j) = random.nextDouble() * (max - min) + min
+    }
+  }
+
   def transpose(): Unit = {
-    val transposedData = Array.tabulate(data(0).length, data.length)((j, i) => data(i)(j))
+    val transposedData = ArrayBuffer.fill(data(0).length, data.length)(0.0)
+    for (i <- data.indices; j <- data(i).indices) {
+      transposedData(j)(i) = data(i)(j)
+    }
     data = transposedData
   }
 
   def scale(coefficient: Double): Unit = {
-    for (i <- data.indices; j <- data(i).indices) {
-      data(i)(j) *= coefficient
-    }
+    data.foreach(row =>
+      row.indices.foreach(j =>
+        row(j) *= coefficient
+      )
+    )
   }
 
   def calculateReturnChange(): Unit = {
-    val newData = Array.ofDim[Double](data.length, data(0).length - 1)
+    val newData = ArrayBuffer.fill(data.length)(ArrayBuffer.fill(data(0).length - 1)(0.0))
     for (i <- data.indices; j <- 0 until data(i).length - 1) {
       newData(i)(j) = data(i)(j + 1) - data(i)(j)
     }
@@ -28,6 +45,10 @@ class Portfolio(var data: Array[Array[Double]]) {
   }
 
   def combine(other: Portfolio): Unit = {
+    if (data.length != other.data.length || data(0).length != other.data(0).length) {
+      throw new IllegalArgumentException("Dimensions of the portfolios do not match")
+    }
+
     for (i <- data.indices; j <- data(i).indices) {
       data(i)(j) += other.data(i)(j)
     }
@@ -50,29 +71,23 @@ class Portfolio(var data: Array[Array[Double]]) {
 }
 
 object Portfolio {
-  def fillRandom(rows: Int, columns: Int, min: Double, max: Double): Portfolio = {
-    val data = Array.fill(rows, columns)(0.0)
-    val rnd = new Random()
-    for (i <- data.indices; j <- data(i).indices) {
-      data(i)(j) = min + rnd.nextDouble() * (max - min)
-    }
-    new Portfolio(data)
-  }
-
   def createWeightsDistribution(assets: Int, periods: Int): Portfolio = {
     val random = new Random()
-    val weights = Array.fill(periods, assets)(random.nextDouble())
-    val normalizedWeights = weights.map { row =>
-      val sum = row.sum
-      row.map(_ / sum)
-    }
-    new Portfolio(normalizedWeights.transpose)
-  }
+    val weights = ArrayBuffer.fill(assets, periods)(random.nextDouble())
 
-  def combine(portfolio1: Portfolio, portfolio2: Portfolio): Portfolio = {
-    val combinedData = portfolio1.data.zip(portfolio2.data).map {
-      case (row1, row2) => row1.zip(row2).map { case (v1, v2) => v1 + v2 }
+    val columnSums = ArrayBuffer.fill(periods)(0.0)
+    for (j <- 0 until periods) {
+      for (i <- 0 until assets) {
+        columnSums(j) += weights(i)(j)
+      }
     }
-    new Portfolio(combinedData)
+
+    for (i <- 0 until assets) {
+      for (j <- 0 until periods) {
+        weights(i)(j) /= columnSums(j)
+      }
+    }
+
+    new Portfolio(weights)
   }
 }

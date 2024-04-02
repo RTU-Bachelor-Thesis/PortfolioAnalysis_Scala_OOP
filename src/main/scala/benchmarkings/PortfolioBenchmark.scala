@@ -22,15 +22,18 @@ class PortfolioBenchmark {
 
   @Setup(Level.Iteration)
   def setupPortfolio(): Unit = {
-    originalPortfolio = Portfolio.fillRandom(assetsCount, periodsCount, -10.0, 10.0)
-    additionalPortfolio = Portfolio.fillRandom(assetsCount, periodsCount, -10.0, 10.0)
+    originalPortfolio = new Portfolio(assetsCount, periodsCount)
+    originalPortfolio.fillRandom(-10.0, 10.0)
+
+    additionalPortfolio = new Portfolio(assetsCount, periodsCount)
+    additionalPortfolio.fillRandom(-10.0, 10.0)
+    
     weightMatrix = Portfolio.createWeightsDistribution(assetsCount, periodsCount)
   }
 
-  // Обновлено для работы на месте без возврата нового объекта
   @Benchmark
   def benchmarkFillRandom(): Unit = {
-    originalPortfolio = Portfolio.fillRandom(assetsCount, periodsCount, -10.0, 10.0)
+    originalPortfolio.fillRandom(-10.0, 10.0)
   }
 
   @Benchmark
